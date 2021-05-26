@@ -1,4 +1,4 @@
-exclude: 'hola1|vendor|.cache'
+exclude: 'hola1|vendor|.phpintel'
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.0.1
@@ -24,6 +24,7 @@ repos:
 
     -   id: php-cs-fixer
         files: \.(php)$
+        verbose: true
 
     -   id: php-stan
         files: \.(php)$

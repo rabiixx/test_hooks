@@ -1,0 +1,7 @@
+[1;32mBegin PHP Code Fixer[0m
+[0;32m  vendor/bin/php-cs-fixer fix[0m
+Loaded config [33mdefault[39m.
+Using cache file ".php-cs-fixer.cache".
+[1;32mBegin PHP Code Fixer[0m
+[0;32m  vendor/bin/php-cs-fixer fix[0m
+Loaded config [33mdefault[39m.
