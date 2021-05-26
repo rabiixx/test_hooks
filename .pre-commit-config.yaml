@@ -1,0 +1,32 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+    -   id: double-quote-string-fixer
+    -   id: check-added-large-files
+
+-   repo: https://github.com/digitalpulp/pre-commit-php.git
+    rev: 1.4.0
+    hooks:
+    -   id: php-lint
+    -   id: php-unit
+    -   id: php-cs
+        files: \.(php)$
+        args: [-pv --colors --cache --standard=PSR12 --extensions=php]
+
+    -   id: php-cbf
+        files: \.(php)$
+
+    -   id: php-cs-fixer
+        files: \.(php)$
+
+    -   id: php-stan
+        files: \.(php)$
+
+-   repo: https://gitlab.com/daverona/pre-commit/php
+    rev: 0.6.0
+    hooks:
+    -   id: phpmd
